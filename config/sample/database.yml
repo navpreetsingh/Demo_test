@@ -1,0 +1,31 @@
+# And be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: db_name
+  pool: 5
+  username: db_username
+  password: db_username
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: db_name
+  pool: 5
+  username: db_username
+  password: db_password
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: db_name
+  pool: 5
+  username: db_username
+  password: db_password
+  socket: /var/run/mysqld/mysqld.sock
